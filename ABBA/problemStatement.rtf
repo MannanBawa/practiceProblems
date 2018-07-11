@@ -1,0 +1,133 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Medium;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red80\green90\blue93;\red255\green255\blue255;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\cssrgb\c38824\c42745\c43922;\cssrgb\c100000\c100000\c100000;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww27120\viewh12620\viewkind0
+\deftab720
+\pard\pardeftab720\sl660\sa200\partightenfactor0
+
+\f0\fs60 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Problem Statement\
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+
+\f1\fs28 \cf2 One day, Jamie noticed that many English words only use the letters A and B. Examples of such words include "AB" (short for abdominal), "BAA" (the noise a sheep makes), "AA" (a type of lava), and "ABBA" (a Swedish pop sensation).\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+\cf2 Inspired by this observation, Jamie created a simple game. You are given two s:\'a0
+\b initial
+\b0 \'a0and\'a0
+\b target
+\b0 . The goal of the game is to find a sequence of valid moves that will change\'a0
+\b initial
+\b0 \'a0into\'a0
+\b target
+\b0 . There are two types of valid moves:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Add the letter A to the end of the string.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Reverse the string and then add the letter B to the end of the string.\
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+\cf2 Return "Possible" (quotes for clarity) if there is a sequence of valid moves that will change\'a0
+\b initial
+\b0 \'a0into\'a0
+\b target
+\b0 . Otherwise, return "Impossible".\
+\pard\pardeftab720\sl660\sa200\partightenfactor0
+
+\f0\fs60 \cf2 Definition\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 Class:\'a0\strokec4 ABBA\strokec3 \
+Method:\'a0\strokec4 canObtain\strokec3 \
+Parameters:\'a0\strokec4 String, String\strokec3 \
+Returns:\'a0\strokec4 String\strokec3 \
+Method signature:\'a0\strokec4 String canObtain(String initial, String target)\strokec3 \
+(be sure your method is public)\
+\pard\pardeftab720\sl660\sa200\partightenfactor0
+
+\f0\fs60 \cf2 Limits\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 Time limit (s):\'a0\strokec4 2.000\strokec3 \
+Memory limit (MB):\'a0\strokec4 256\strokec3 \
+\pard\pardeftab720\sl660\sa200\partightenfactor0
+
+\f0\fs60 \cf2 Constraints\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 - The length of\'a0
+\b initial
+\b0 \'a0will be between 1 and 999, inclusive.\
+- The length of\'a0
+\b target
+\b0 \'a0will be between 2 and 1000, inclusive.\
+-\'a0
+\b target
+\b0 \'a0will be longer than\'a0
+\b initial
+\b0 .\
+- Each character in\'a0
+\b initial
+\b0 \'a0and each character in\'a0
+\b target
+\b0 \'a0will be either 'A' or 'B'.\
+\pard\pardeftab720\sl660\sa200\partightenfactor0
+
+\f0\fs60 \cf2 Examples\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 0)\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \strokec4 "B"\strokec3 \
+\strokec4 "ABBA"\strokec3 \
+\strokec4 Returns: "Possible"\strokec3 \
+\strokec4 Jamie can perform the following moves:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Initially, the string is "B".\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Jamie adds an 'A' to the end of the string. Now the string is "BA".\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Jamie reverses the string and then adds a 'B' to the end of the string. Now the string is "ABB".\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Jamie adds an 'A' to the end of the string. Now the string is "ABBA".\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 Since there is a sequence of moves which starts with "B" and creates the string "ABBA", the answer is "Possible".\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \strokec3 \
+1)\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \strokec4 "AB"\strokec3 \
+\strokec4 "ABB"\strokec3 \
+\strokec4 Returns: "Impossible"\strokec3 \
+\strokec4 The only strings of length 3 Jamie can create are "ABA" and "BAB".\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \strokec3 \
+2)\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \strokec4 "BBAB"\strokec3 \
+\strokec4 "ABABABABB"\strokec3 \
+\strokec4 Returns: "Impossible"\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \strokec3 \
+3)\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \strokec4 "BBBBABABBBBBBA"\strokec3 \
+\strokec4 "BBBBABABBABBBBBBABABBBBBBBBABAABBBAA"\strokec3 \
+\strokec4 Returns: "Possible"\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \strokec3 \
+4)\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \strokec4 "A"\strokec3 \
+\strokec4 "BB"\strokec3 \
+\strokec4 Returns: "Impossible"\strokec3 \
+}
