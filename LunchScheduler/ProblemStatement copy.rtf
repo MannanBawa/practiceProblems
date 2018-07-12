@@ -1,0 +1,243 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Medium;\f1\fnil\fcharset0 HelveticaNeue;\f2\fmodern\fcharset0 Courier;
+\f3\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red80\green90\blue93;\red17\green18\blue19;\red255\green255\blue255;
+\red38\green38\blue38;\red242\green242\blue242;}
+{\*\expandedcolortbl;;\cssrgb\c38824\c42745\c43922;\cssrgb\c8235\c9020\c9412;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c20000\c20000\c20000;\cssrgb\c96078\c96078\c96078;}
+\margl1440\margr1440\vieww27120\viewh14880\viewkind0
+\deftab720
+\pard\pardeftab720\sl660\sa200\partightenfactor0
+
+\f0\fs60 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Problem Statement\
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+
+\f1\i\fs28 \cf2 Note that in the following problem statement, all quotes and angle brackets are for clarity
+\i0 \cb1 \
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+\cf2 \cb3 A certain vending machine delves out its goods from a rotating cylinder, which can rotate around in both clockwise and counter-clockwise directions. The cylinder has a number of shelves on it, and each shelf is divided into a number of columns. On the front of the machine, there is a panel of doors that extends the entire height of the column. There is one door for each shelf, which is the width of one column. When a purchase is made, the user uses two buttons to rotate the cylinder so their purchase is located at a door. They make their purchase by sliding the appropriate door open, and removing the item (there can only be one item per column on a particular shelf). The cylinder can rotate in a complete circle, and so there are always two ways to get from a particular column to another column.\cb1 \
+\cb3 Because the vending machine company wants to sell the most expensive items possible, and the machine can only show one column at a time, the machine will always try to put forth the most expensive column available. The price of a column is calculated by adding up all the prices of the remaining items in that column. The most expensive column is defined to be the one with the maximum price. If 5 minutes have elapsed since the last purchase was made, the machine rotates the cylinder to the most expensive column. If, however, another purchase has been made before the 5 minutes are up, the rotation does not occur, and the 5 minute timer is reset.\cb1 \
+\cb3 Recently, some machines' rotating motors have been failing early, and the company wants to see if it is because the machines rotate to show their expensive column too often. To determine this, they have hired you to simulate purchases and see how long the motor is running.\cb1 \
+\cb3 You will be given the\'a0
+\b prices
+\b0 \'a0of all the items in the vending machine in a . Each element of\'a0
+\b prices
+\b0 \'a0will be a single-space separated list of integers, which are the prices (in cents) of the items. The Nth integer in the Mth element of\'a0
+\b prices
+\b0 \'a0represents the price of the Nth column in the Mth shelf in the cylinder. You will also be given a\'a0
+\b purchases
+\b0 . Each element in\'a0
+\b purchases
+\b0 \'a0will be in the format:\cb1 \uc0\u8232 
+\f2 \cb3 ",:"
+\f1 \cb1 \uc0\u8232 \cb3 is a 0-based integer which identifies the shelf that the item was purchased from. is a 0-based integer which identifies the column the item was purchased from.\'a0is an integer which represents the time, in minutes, since the machine was turned on.\cb1 \
+\cb3 In the simulation, the motor needs to run for 1 second in order to rotate to an adjacent column. When the machine is turned on, column 0 is facing out, and it immediately rotates to the most expensive column, even if the first purchase is at time 0. The machine also rotates to the most expensive column at the end of the simulation, after the last purchase. Note that when an item is purchased, its price is no longer used in calculating the price of the column it is in. When the machine rotates to the most expensive column, or when a user rotates the cylinder, the rotation is in the direction which takes the least amount of time. For example, in a 4-column cylinder, if column 0 is displayed, and the cylinder is rotated to column 3, it can be rotated backwards, which takes 1 second, versus rotating forwards which takes 3 seconds.\cb1 \
+\cb3 If a user tries to purchase an item that was already purchased, this is an incorrect simulation, and your method should return -1. Otherwise, your method should return how long the motor was running, in seconds.\cb1 \
+\pard\pardeftab720\sl660\sa200\partightenfactor0
+
+\f0\fs60 \cf2 \cb3 Definition\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 Class:\'a0\cf4 \strokec4 VendingMachine\cf2 \strokec2 \
+Method:\'a0\cf4 \strokec4 motorUse\cf2 \strokec2 \
+Parameters:\'a0\cf4 \strokec4 String[], String[]\cf2 \strokec2 \
+Returns:\'a0\cf4 \strokec4 int\cf2 \strokec2 \
+Method signature:\'a0\cf4 \strokec4 int motorUse(String[] prices, String[] purchases)\cf2 \strokec2 \
+(be sure your method is public)\
+\pard\pardeftab720\sl660\sa200\partightenfactor0
+
+\f0\fs60 \cf2 Limits\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 Time limit (s):\'a0\cf4 \strokec4 840.000\cf2 \strokec2 \
+Memory limit (MB):\'a0\cf4 \strokec4 64\cf2 \strokec2 \
+\pard\pardeftab720\sl660\sa200\partightenfactor0
+
+\f0\fs60 \cf2 Notes\cb1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 - When rotating to the most expensive column, if two columns have the same price, rotate to the one with the lowest column number (see example 0).\cb1 \
+\cb3 - If two purchases are less than 5 minutes apart, the machine does not perform a rotation to the most expensive column between the purchases. If two purchases are 5 or more minutes apart, the machine rotates to the most expensive column between the two purchases.\cb1 \
+\pard\pardeftab720\sl660\sa200\partightenfactor0
+
+\f0\fs60 \cf2 \cb3 Constraints\cb1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 -\'a0
+\b prices
+\b0 \'a0will have between 1 and 50 elements, inclusive.\cb1 \
+\cb3 - Each element of\'a0
+\b prices
+\b0 \'a0will have between 5 and 50 characters, is a single-space separated list of integers, and has no leading or trailing spaces.\cb1 \
+\cb3 - Each element of\'a0
+\b prices
+\b0 \'a0will have the same number of integers in it.\cb1 \
+\cb3 - Each element of\'a0
+\b prices
+\b0 \'a0will have at least 3 integers in it.\cb1 \
+\cb3 - Each integer in\'a0
+\b prices
+\b0 \'a0will be between 1 and 10000, inclusive, and will not contain leading 0's.\cb1 \
+\cb3 -\'a0
+\b purchases
+\b0 \'a0will have between 1 and 50 elements, inclusive.\cb1 \
+\cb3 - Each element of\'a0
+\b purchases
+\b0 \'a0will be in the format\'a0
+\f2 ",:"
+\f1 \'a0(angle brackets and quotes are for clarity only), where , , and\'a0are all integers.\cb1 \
+\cb3 - In each element of\'a0
+\b purchases
+\b0 , will be between 0 and M - 1, inclusive, where M is the number of elements in prices.\cb1 \
+\cb3 - In each element of\'a0
+\b purchases
+\b0 , will be between 0 and N - 1, inclusive, where N is the number of integers in each element of prices.\cb1 \
+\cb3 - In each element of\'a0
+\b purchases
+\b0 ,\'a0will be between 0 and 1000, inclusive.\cb1 \
+\cb3 - In each element of\'a0
+\b purchases
+\b0 , , , and\'a0will not contain extra leading 0's.\cb1 \
+\cb3 -\'a0
+\b purchases
+\b0 \'a0will be sorted in strictly ascending order by\'a0. This means that each purchase must occur later than all previous ones.\cb1 \
+\pard\pardeftab720\sl660\sa200\partightenfactor0
+
+\f0\fs60 \cf2 \cb3 Examples\cb1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 0)\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \strokec4 \{"100 100 100"\}\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 \{"0,0:0", "0,2:5", "0,1:10"\}\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 Returns: 4\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+\cf4 \cb3 \strokec4 The vending machine has three columns, and only one row. Since all three items are the same price, they are all the most expensive, and therefore, the lowest numbered column is rotated to. Since the machine starts out at column 0, no rotation is performed before the first purchase. The starting configuration is (*'s denote the currently displayed column):\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs26 \cf5 \cb6 \strokec5  \
++-----+-----+-----+\
+| 100 | 100 | 100 |\
++*****+-----+-----+\
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+
+\f1\fs28 \cf4 \cb3 \strokec4 In the first purchase, the customer does not rotate the cylinder because the item he wants is already displayed. The configuration of the vending machine is now:\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs26 \cf5 \cb6 \strokec5 +-----+-----+-----+\
+|  0  | 100 | 100 |\
++*****+-----+-----+\
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+
+\f1\fs28 \cf4 \cb3 \strokec4 Since the next purchase is at least 5 minutes away, the machine performs a rotation to the most expensive column. Both column 1 and 2 are now 100 apiece, so it rotates to the smallest index of these, column 1. The fastest way there is to rotate forward 1 column, yielding 1 second of motor use:\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs26 \cf5 \cb6 \strokec5 +-----+-----+-----+\
+|  0  | 100 | 100 |\
++-----+*****+-----+\
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+
+\f1\fs28 \cf4 \cb3 \strokec4 The next customer purchases the item in column 2, which is 1 column away, so add 1 second to the motor use. Because another 5 minutes passes, the most expensive column is displayed, which is now column 1. Add 1 more second for the rotation. The configuration is now:\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs26 \cf5 \cb6 \strokec5 +-----+-----+-----+\
+|  0  | 100 |  0  |\
++-----+*****+-----+\
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+
+\f1\fs28 \cf4 \cb3 \strokec4 The final customer purchases from column 1, (which is already displayed), and the final most expensive column is rotated to. Since all columns are the same price again (0), column 0 is displayed. It takes 1 second to get back there, so add 1 more second.\cb1 \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \cb3 \strokec2 1)\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \strokec4 \{"100 200 300 400 500 600"\}\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 \{"0,2:0", "0,3:5", "0,1:10", "0,4:15"\}\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 Returns: 17\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+\cf4 \cb3 \strokec4 The most expensive column during this whole example is column 5. Since all purchases are at least 5 minutes apart, the most expensive column is rotated to each time.\cb1 \
+\cb3 Before the purchases start, add 1 second for rotating to column 5.\cb1 \uc0\u8232 \cb3 The first purchase is 3 columns away, so add 3 seconds to get there, and 3 seconds to get back to column 5\cb1 \uc0\u8232 \cb3 The second purchase is 2 columns away, so add 4 seconds to get there and back.\cb1 \uc0\u8232 \cb3 The third purchase is also 2 columns away, so add 4 more seconds.\cb1 \uc0\u8232 \cb3 The final purchase is only one column away, so add 2 more seconds.\cb1 \
+\cb3 The final configuration is:\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs26 \cf5 \cb6 \strokec5 +-----+-----+-----+-----+-----+-----+\
+| 100 |  0  |  0  |  0  |  0  | 600 |\
++-----+-----+-----+-----+-----+*****+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \strokec2 2)\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \strokec4 \{"100 200 300 400 500 600"\}\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 \{"0,2:0", "0,3:4", "0,1:8", "0,4:12"\}\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 Returns: 11\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+\cf4 \cb3 \strokec4 This is the same as example 1, except now, the purchases are all less than 5 minutes apart.\cb1 \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \cb3 \strokec2 3)\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \strokec4 \{"100 100 100"\}\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 \{"0,0:10", "0,0:11"\}\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 Returns: -1\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+\cf4 \cb3 \strokec4 The second purchase is illegal since the item was already purchased\cb1 \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf2 \cb3 \strokec2 4)\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \strokec4 \{"100 200 300", "600 500 400"\}\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 \{"0,0:0", "1,1:10", "1,2:20", "0,1:21", "1,0:22", "0,2:35"\}\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 Returns: 6\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl320\sa200\partightenfactor0
+\cf4 \cb3 \strokec4 A two-row example. The configurations just before each purchase are:\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\fs26 \cf5 \cb6 \strokec5 purchase 1:\
++-----+-----+-----+\
+| 100 | 200 | 300 |\
++-----+-----+-----+\
+| 600 | 500 | 400 |\
++*****+-----+-----+\
+\
+purchase 2:\
++-----+-----+-----+\
+|  0  | 200 | 300 |\
++-----+-----+-----+\
+| 600 | 500 | 400 |\
++-----+*****+-----+\
+\
+purchase 3:\
++-----+-----+-----+\
+|  0  | 200 | 300 |\
++-----+-----+-----+\
+| 600 |  0  | 400 |\
++-----+-----+*****+\
+\
+purchase 4:\
++-----+-----+-----+\
+|  0  | 200 | 300 |\
++-----+-----+-----+\
+| 600 |  0  |  0  |\
++-----+-----+*****+\
+\
+purchase 5:\
++-----+-----+-----+\
+|  0  |  0  | 300 |\
++-----+-----+-----+\
+| 600 |  0  |  0  |\
++-----+*****+-----+\
+\
+purchase 6:\
++-----+-----+-----+\
+|  0  |  0  | 300 |\
++-----+-----+-----+\
+|  0  |  0  |  0  |\
++-----+-----+*****+\
+\
+final:\
++-----+-----+-----+\
+|  0  |  0  |  0  |\
++-----+-----+-----+\
+|  0  |  0  |  0  |\
++*****+-----+-----+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \strokec2 This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2003, TopCoder, Inc. All rights reserved.\
+}
