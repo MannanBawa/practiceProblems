@@ -12,24 +12,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Execution.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Execution.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Execution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="264" column="35" lean-forward="false" selection-start-line="264" selection-start-column="35" selection-end-line="264" selection-end-column="35" />
               <folding>
-                <element signature="method#formalizeInput#0;class#Execution#0" expanded="false" />
                 <element signature="method#scanString#0;class#Execution#0" expanded="false" />
+                <element signature="method#scanner#0;class#Execution#0" expanded="false" />
+                <element signature="method#switchScanner#0;class#Execution#0" expanded="false" />
+                <element signature="e#4827#4876#0" expanded="false" />
+                <element signature="method#getSet#0;class#Execution#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExecutionTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ExecutionTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/ExecutionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="120">
+              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,10 +88,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,6 +118,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,44 +260,47 @@
       <updated>1531959240197</updated>
       <workItem from="1531959244458" duration="1457000" />
       <workItem from="1531962034179" duration="5422000" />
-      <workItem from="1532016383873" duration="10202000" />
+      <workItem from="1532016383873" duration="20120000" />
+      <workItem from="1532405859105" duration="13307000" />
+      <workItem from="1536085686121" duration="66000" />
+      <workItem from="1536086855430" duration="625000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ExecutionTest - 2018.07.19 at 16h 58m 38s.xml">
+    <history-entry file="ExecutionTest - 2018.07.24 at 22h 30m 06s.xml">
       <configuration name="ExecutionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExecutionTest - 2018.07.19 at 16h 59m 57s.xml">
+    <history-entry file="ExecutionTest - 2018.07.24 at 22h 30m 07s.xml">
       <configuration name="ExecutionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExecutionTest - 2018.07.19 at 17h 00m 31s.xml">
+    <history-entry file="ExecutionTest - 2018.07.24 at 22h 51m 24s.xml">
       <configuration name="ExecutionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExecutionTest - 2018.07.19 at 17h 00m 43s.xml">
+    <history-entry file="ExecutionTest - 2018.07.24 at 23h 00m 55s.xml">
       <configuration name="ExecutionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExecutionTest - 2018.07.19 at 17h 00m 58s.xml">
+    <history-entry file="ExecutionTest - 2018.07.24 at 23h 03m 55s.xml">
       <configuration name="ExecutionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExecutionTest - 2018.07.19 at 17h 01m 07s.xml">
+    <history-entry file="ExecutionTest - 2018.07.24 at 23h 03m 59s.xml">
       <configuration name="ExecutionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExecutionTest - 2018.07.19 at 17h 02m 58s.xml">
+    <history-entry file="ExecutionTest - 2018.07.24 at 23h 07m 59s.xml">
       <configuration name="ExecutionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExecutionTest - 2018.07.19 at 17h 03m 09s.xml">
+    <history-entry file="ExecutionTest - 2018.07.24 at 23h 13m 45s.xml">
       <configuration name="ExecutionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExecutionTest - 2018.07.19 at 17h 03m 21s.xml">
+    <history-entry file="ExecutionTest - 2018.07.24 at 23h 15m 38s.xml">
       <configuration name="ExecutionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExecutionTest - 2018.07.19 at 17h 05m 13s.xml">
+    <history-entry file="ExecutionTest - 2018.07.24 at 23h 17m 04s.xml">
       <configuration name="ExecutionTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17081000" />
+    <option name="totallyTimeSpent" value="40997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -302,13 +308,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29526463" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30640668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -319,12 +324,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39972144" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -337,7 +343,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Execution.java</url>
+          <line>252</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -347,8 +361,83 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#formalizeInput#0;class#Execution#0" expanded="false" />
             <element signature="method#scanString#0;class#Execution#0" expanded="false" />
+            <element signature="method#scanner#0;class#Execution#0" expanded="false" />
+            <element signature="method#switchScanner#0;class#Execution#0" expanded="false" />
+            <element signature="e#4827#4876#0" expanded="false" />
+            <element signature="method#getSet#0;class#Execution#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ExecutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Execution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#scanString#0;class#Execution#0" expanded="false" />
+            <element signature="method#scanner#0;class#Execution#0" expanded="false" />
+            <element signature="method#switchScanner#0;class#Execution#0" expanded="false" />
+            <element signature="e#4827#4876#0" expanded="false" />
+            <element signature="method#getSet#0;class#Execution#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ExecutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Execution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#scanString#0;class#Execution#0" expanded="false" />
+            <element signature="method#scanner#0;class#Execution#0" expanded="false" />
+            <element signature="method#switchScanner#0;class#Execution#0" expanded="false" />
+            <element signature="e#4827#4876#0" expanded="false" />
+            <element signature="method#getSet#0;class#Execution#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ExecutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Execution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#scanString#0;class#Execution#0" expanded="false" />
+            <element signature="method#scanner#0;class#Execution#0" expanded="false" />
+            <element signature="method#switchScanner#0;class#Execution#0" expanded="false" />
+            <element signature="e#4827#4876#0" expanded="false" />
+            <element signature="method#getSet#0;class#Execution#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -368,8 +457,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#formalizeInput#0;class#Execution#0" expanded="false" />
             <element signature="method#scanString#0;class#Execution#0" expanded="false" />
+            <element signature="method#scanner#0;class#Execution#0" expanded="false" />
+            <element signature="method#switchScanner#0;class#Execution#0" expanded="false" />
+            <element signature="e#4827#4876#0" expanded="false" />
+            <element signature="method#getSet#0;class#Execution#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -384,23 +476,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ExecutionTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="659" column="0" lean-forward="false" selection-start-line="659" selection-start-column="0" selection-end-line="659" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Execution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="264" column="35" lean-forward="false" selection-start-line="264" selection-start-column="35" selection-end-line="264" selection-end-column="35" />
           <folding>
-            <element signature="method#formalizeInput#0;class#Execution#0" expanded="false" />
             <element signature="method#scanString#0;class#Execution#0" expanded="false" />
+            <element signature="method#scanner#0;class#Execution#0" expanded="false" />
+            <element signature="method#switchScanner#0;class#Execution#0" expanded="false" />
+            <element signature="e#4827#4876#0" expanded="false" />
+            <element signature="method#getSet#0;class#Execution#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ExecutionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
