@@ -59,59 +59,64 @@ public class HashTable {
         int index = hash(name);
         int numItemsInIndex = numItemsInIndex(index);
 
-        if (numItemsInIndex == 0 ) {
+        //Case 0.1 - Bucket is empty: This one shouldn't happen since every bucket is initialized
+        // with at least 1 "empty" item, but let's have it just in case.
+        if (numItemsInIndex == 0) {
             System.out.println("THE ITEM DID NOT EXIST TO BEGIN WITH");
             return;
         }
 
         if (numItemsInIndex == 1) {
-           Item thisItem = hashTable[index];
-           if (thisItem.name.equals(name)) {
-               thisItem.name = "empty";
-               thisItem.favDrink = "empty";
-               thisItem.nextItem = null;
+          //Case 0.2 - Bucket is empty: This bucket only has one item in it, and it's the default
+          // empty item
+           Item firstItem = hashTable[index];
+           if (firstItem.name.equals("empty") && firstItem.favDrink.equals("empty")) {
+               System.out.println(name + "was not found in the list" );
                return;
-           } else {
-               System.out.println("THE ITEM DID NOT EXIST TO BEGIN WITH");
+           }
+           //Case 1 - Only one item in the bucket, and that item is the one to be removed
+           else if (firstItem.name.equals(name)) {
+             firstItem.name = "empty";
+             firstItem.favDrink = "empty";
+             firstItem.nextItem = null;
+             System.out.println("CASE 1");
+             return;
            }
         }
 
-        Item previousItem = hashTable[index];
+
+        //Case 2: Item to delete is the first in the bucket, there are other items though
+        Item firstItem = hashTable[index];
+        if (firstItem.name.equals(name)) {
+          hashTable[index] = hashTable[index].nextItem;
+          firstItem.name = "empty";
+          firstItem.favDrink = "empty";
+          firstItem.nextItem = null;
+
+          System.out.println("CASE 2: " + name + " found as first item in Bucket! Deleted.");
+          return;
+        }
+
+        //Case 3: Bucket has items but first item is not a match
+
+        Item previousItem = firstItem;
         Item thisItem = previousItem.nextItem;
-        boolean itemFound = false;
 
-        if (previousItem.name.equals(name)) {
-            itemFound = true;
-            previousItem = thisItem;
+        //Case 3.1 Item is somewhere in the middle of list
+        while(thisItem != null) {
+          if (thisItem.name.equals(name)) {
+            previousItem.nextItem = thisItem.nextItem;
+
             thisItem.name = "empty";
             thisItem.favDrink = "empty";
             thisItem.nextItem = null;
-
+            System.out.println("Case 3.1 " + name + " found somewhere in list. Deleted");
+            return;
+          }
+          previousItem = thisItem;
+          thisItem = thisItem.nextItem;
         }
-
-        while(thisItem.nextItem != null) {
-
-            if (thisItem.name.equals(name)) {
-                itemFound = true;
-
-                previousItem.nextItem = thisItem.nextItem;
-
-                thisItem.name = "empty";
-                thisItem.favDrink = "empty";
-                thisItem.nextItem = null;
-            }
-
-            previousItem = thisItem;
-            thisItem = thisItem.nextItem;
-        }
-
-        if (thisItem.name.equals(name)) {
-            itemFound = true;
-            previousItem.nextItem = null;
-            thisItem.name = "empty";
-            thisItem.favDrink = "empty";
-            thisItem.nextItem = null;
-        }
+        System.out.println("Item not found");
     }
 
     public int numItemsInIndex(int index) {
