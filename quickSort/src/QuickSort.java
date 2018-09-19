@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class QuickSort {
 
 
-  public int[] newSortNums (int[] inArr) {
+  public static int[] sortNums (int[] inArr) {
 
     int inputLength = inArr.length;
     int[] outArr = inArr;
@@ -39,7 +39,7 @@ public class QuickSort {
     int[] rightSide = new int[inputLength - wallIndex];
 
     for (int i = 0; i < wallIndex; i++) {
-      leftSide[i] = outArr[i];
+      leftSide[i] = outArr[i]    ;
     }
 
     int rightSize = inputLength - wallIndex;
@@ -48,8 +48,8 @@ public class QuickSort {
       rightSide[i] = outArr[wallIndex + i];
     }
 
-    int[] sortedLeft = newSortNums(leftSide);
-    int[] sortedRight = newSortNums(rightSide);
+    int[] sortedLeft = sortNums(leftSide);
+    int[] sortedRight = sortNums(rightSide);
 
     for (int i = 0; i < sortedLeft.length; i++) {
       outArr[i] = sortedLeft[i];
