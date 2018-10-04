@@ -3,15 +3,12 @@ import java.util.Queue;
 
 class BinaryTree {
 
+  public static void depthFirstPrint(BinaryNode rootBinaryNode) {
 
-  public BinaryTree() {}
+    printBinaryNode(rootBinaryNode);
 
-  public static void depthFirstPrint(Node rootNode) {
-
-    printNode(rootNode);
-
-    Node leftChild = rootNode.getLeftChild();
-    Node rightChild = rootNode.getRightChild();
+    BinaryNode leftChild = rootBinaryNode.getLeftChild();
+    BinaryNode rightChild = rootBinaryNode.getRightChild();
 
     if (leftChild != null) {
       depthFirstPrint(leftChild);
@@ -22,28 +19,29 @@ class BinaryTree {
     }
   }
 
-  public static void breadthFirstPrint(Node rootNode) {
+  public static void breadthFirstPrint(BinaryNode rootBinaryNode) {
 
-    Queue<Node> printQ = new LinkedList<Node>();
+    Queue<BinaryNode> printQ = new LinkedList<BinaryNode>();
 
-    printQ.add(rootNode);
+    printQ.add(rootBinaryNode);
 
     while (!printQ.isEmpty()) {
-      Node thisNode = printQ.remove();
-      BFprint(thisNode, printQ);
+      BinaryNode thisBinaryNode = printQ.remove();
+      BFprint(thisBinaryNode, printQ);
     }
   }
 
-  public static void printNode(Node thisNode) {
-    System.out.println(thisNode.getData());
+  public static void printBinaryNode(BinaryNode thisBinaryNode) {
+    System.out.println(thisBinaryNode
+            .getData());
   }
 
-  private static void BFprint(Node thisNode, Queue printingQ){
+  private static void BFprint(BinaryNode thisBinaryNode, Queue printingQ){
 
-    System.out.println(thisNode.getData());
+    System.out.println(thisBinaryNode.getData());
 
-    Node leftChild = thisNode.getLeftChild();
-    Node rightChild = thisNode.getRightChild();
+    BinaryNode leftChild = thisBinaryNode.getLeftChild();
+    BinaryNode rightChild = thisBinaryNode.getRightChild();
 
     if (leftChild != null) {
       printingQ.add(leftChild);
