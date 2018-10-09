@@ -1,0 +1,5 @@
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\alphaDice - Csharp.NET\bin\Debug\alphaDice - Csharp.NET.dll
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\alphaDice - Csharp.NET\bin\Debug\alphaDice - Csharp.NET.pdb
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\alphaDice - Csharp.NET\obj\Debug\alphaDice - Csharp.NET.csproj.CoreCompileInputs.cache
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\alphaDice - Csharp.NET\obj\Debug\alphaDice - Csharp.NET.dll
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\alphaDice - Csharp.NET\obj\Debug\alphaDice - Csharp.NET.pdb
