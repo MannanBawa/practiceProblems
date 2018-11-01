@@ -1,0 +1,10 @@
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\AlphaDiceTest\obj\Debug\AlphaDiceTest.csprojAssemblyReference.cache
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\AlphaDiceTest\obj\Debug\AlphaDiceTest.csproj.CoreCompileInputs.cache
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\AlphaDiceTest\bin\Debug\AlphaDiceTest.exe.config
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\AlphaDiceTest\bin\Debug\AlphaDiceTest.exe
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\AlphaDiceTest\bin\Debug\AlphaDiceTest.pdb
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\AlphaDiceTest\bin\Debug\alphaDice - Csharp.NET.dll
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\AlphaDiceTest\bin\Debug\alphaDice - Csharp.NET.pdb
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\AlphaDiceTest\obj\Debug\AlphaDiceTest.csproj.CopyComplete
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\AlphaDiceTest\obj\Debug\AlphaDiceTest.exe
+C:\Users\Seara\source\repos\alphaDice - Csharp.NET\AlphaDiceTest\obj\Debug\AlphaDiceTest.pdb

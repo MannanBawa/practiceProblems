@@ -1,0 +1,7 @@
+C:\Users\Seara\OneDrive\Desktop\Projects\quickSort\quickSort\bin\Debug\quickSort.exe.config
+C:\Users\Seara\OneDrive\Desktop\Projects\quickSort\quickSort\bin\Debug\quickSort.exe
+C:\Users\Seara\OneDrive\Desktop\Projects\quickSort\quickSort\bin\Debug\quickSort.pdb
+C:\Users\Seara\OneDrive\Desktop\Projects\quickSort\quickSort\obj\Debug\quickSort.csprojAssemblyReference.cache
+C:\Users\Seara\OneDrive\Desktop\Projects\quickSort\quickSort\obj\Debug\quickSort.csproj.CoreCompileInputs.cache
+C:\Users\Seara\OneDrive\Desktop\Projects\quickSort\quickSort\obj\Debug\quickSort.exe
+C:\Users\Seara\OneDrive\Desktop\Projects\quickSort\quickSort\obj\Debug\quickSort.pdb
