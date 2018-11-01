@@ -14,7 +14,8 @@ public class AlphaDiceTest {
   public void testOne() {
     AlphaDice thisAD = new AlphaDice();
     String[] rolls = new String[]{"ABC", "DEF", "BCA", "GHI", "ABC"};
-    System.out.println(thisAD.badData(rolls));
+    int result = thisAD.badData(rolls);
+
 
   }
 

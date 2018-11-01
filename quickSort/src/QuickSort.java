@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class QuickSort {
 
-
   public static int[] sortNums (int[] inArr) {
 
     int inputLength = inArr.length;
