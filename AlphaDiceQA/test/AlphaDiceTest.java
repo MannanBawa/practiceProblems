@@ -1,13 +1,15 @@
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class AlphaDiceTest {
 
   @Test
   public void testZero() {
     AlphaDice thisAD = new AlphaDice();
     String[] rolls = new String[] {"ABC", "ZCB"};
-    System.out.println(thisAD.badData(rolls));
-
+    int result = thisAD.badData(rolls);
+    assertEquals(-1, result);
   }
 
   @Test
@@ -15,7 +17,7 @@ public class AlphaDiceTest {
     AlphaDice thisAD = new AlphaDice();
     String[] rolls = new String[]{"ABC", "DEF", "BCA", "GHI", "ABC"};
     int result = thisAD.badData(rolls);
-
+    assertEquals(3, result);
 
   }
 
@@ -23,7 +25,8 @@ public class AlphaDiceTest {
   public void testTwo() {
     AlphaDice thisAD = new AlphaDice();
     String[] rolls = new String[]{"ABA", "CDE", "CDE", "CDE", "CDE"};
-    System.out.println(thisAD.badData(rolls));
+    int result = thisAD.badData(rolls);
+    assertEquals(0, result);
   }
 
   @Test
@@ -33,7 +36,8 @@ public class AlphaDiceTest {
     rolls[0] = "ABC";
     rolls[1] = "DEF";
     rolls[2] = "BCF";
-    System.out.println(thisAD.badData(rolls));
+    int result = thisAD.badData(rolls);
+    assertEquals(2, result);
   }
 
   @Test
@@ -43,7 +47,8 @@ public class AlphaDiceTest {
     rolls[0] = "ABC";
     rolls[1] = "DEF";
     rolls[2] = "ADF";
-    System.out.println(thisAD.badData(rolls));
+    int result = thisAD.badData(rolls);
+    assertEquals(2, result);
   }
 
 

@@ -1,0 +1,26 @@
+Problem statement:
+
+You are given information on dice rolls. Specifically, you are given the results of a roll:what characters are visible on the front side, top side and right side of the dice after each roll.
+
+Given a set of data containing multiple OF THE SAME DICE rolls in the form of an array. Output the index of the first roll data that is impossible. If all rolls are possible, return -1.
+
+Examples:
+
+0) 
+	Given: ["ABC" "ZCB"]
+	Returns: -1
+
+1) 
+	Given: ["ABC", "DEF", "BCA", "GHI", "ABC"]
+	Returns: 3
+
+2)
+	Given: ["ABA", "CDE", "CDE", "CDE", "CDE"
+	Returns: 0
+3)
+	Given:["ABC", "DEF", "BCF"]
+	Returns:  2
+
+4)
+	Given:["ABC", "DEF", "ADF"]
+	Returns:  2
